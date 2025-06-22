@@ -1,12 +1,12 @@
-# ✈️ Flight Delay Prediction Using Machine Learning
+# Flight Delay Prediction Using Machine Learning
 
 This project aims to predict flight delays using real-world U.S. domestic flight data from 2015. The analysis explores key delay factors, performs feature engineering, and builds predictive models (Logistic Regression, Decision Tree, and Random Forest) to support better operational decisions in aviation.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
-📁 flight-delay-prediction/
+ flight-delay-prediction/
 ├── data/ # Source & cleaned data files
 ├── notebooks/ # Jupyter notebooks with analysis & modeling
 ├── images/ # Visualizations & plots
@@ -15,7 +15,7 @@ This project aims to predict flight delays using real-world U.S. domestic flight
 
 ---
 
-## 🚀 Objectives
+## Objectives
 
 - Perform EDA to understand delay patterns.
 - Quantify relationships between categorical features and delays using **Cramér's V**.
@@ -25,7 +25,7 @@ This project aims to predict flight delays using real-world U.S. domestic flight
 
 ---
 
-## 🧪 Data
+## Data
 
 The dataset includes over 5 million U.S. domestic flights from 2015 with the following features:
 
@@ -34,7 +34,7 @@ The dataset includes over 5 million U.S. domestic flights from 2015 with the fol
 
 ---
 
-## 📊 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 - **Delay Distribution:** Most delays are under 60 minutes; KDE plots show distinct density curves between delayed and on-time flights.
 - **Correlation Heatmap:** Strong correlation between `DEPARTURE_DELAY` and `ARRIVAL_DELAY`, as well as between `AIR_TIME` and `DISTANCE`.
@@ -46,22 +46,22 @@ The dataset includes over 5 million U.S. domestic flights from 2015 with the fol
 
 ---
 
-## 🤖 Model Training & Evaluation
+## Model Training & Evaluation
 
-### ✅ Logistic Regression
+### Logistic Regression
 - Accuracy: **93%**
 - AUC: **0.93**
 - Balanced performance on both classes
 
-### 🌲 Random Forest (Untuned)
+### Random Forest (Untuned)
 - AUC: **0.91**
 - Failed to predict delays (likely due to class imbalance or overfitting)
 
-### 🌳 Decision Tree
+### Decision Tree
 - AUC: **0.82**
 - Good interpretability, but lower performance
 
-### 📈 Evaluation Plots
+### Evaluation Plots
 - Precision-Recall Curves
 - ROC Curves
 - Confusion Matrices
@@ -69,7 +69,7 @@ The dataset includes over 5 million U.S. domestic flights from 2015 with the fol
 
 ---
 
-## 📌 Recommendations
+## Recommendations
 
 - Use **logistic regression** as the baseline production model.
 - Tune **random forest** hyperparameters for improved recall.
@@ -78,7 +78,7 @@ The dataset includes over 5 million U.S. domestic flights from 2015 with the fol
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 ```bash
 pandas
